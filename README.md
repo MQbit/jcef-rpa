@@ -7,15 +7,16 @@
 
 主要步骤包括：
 
-初始化 JCEF 并创建浏览器窗口。
-加载百度首页并在页面加载完成后执行搜索。
-在搜索结果页面加载完成后，执行 JavaScript 脚本提取搜索结果。
-通过 JavaScript 与 Java 之间的通信，将提取的结果传递回 Java 代码。
-解析结果并返回给调用者。
+- 初始化 JCEF 并创建浏览器窗口。
+- 加载百度首页并在页面加载完成后执行搜索。
+- 在搜索结果页面加载完成后，执行 JavaScript 脚本提取搜索结果。
+- 通过 JavaScript 与 Java 之间的通信，将提取的结果传递回 Java 代码。
+- 解析结果并返回给调用者。
 
 ## 总体概述
 
-这个程序的目标是使用 **JCEF**（Java Chromium Embedded Framework）来加载百度首页，执行搜索，并提取搜索结果。主要步骤包括：
+这个程序的目标是使用 **JCEF**（Java Chromium Embedded Framework）来加载百度首页，执行搜索，并提取搜索结果。
+主要步骤包括：
 
 1. 初始化 JCEF 并创建浏览器窗口。
 2. 加载百度首页并在页面加载完成后执行搜索。
@@ -362,5 +363,3 @@ public static class SearchResult {
 - **通过执行 JavaScript 脚本，操纵网页 DOM，执行搜索和提取结果**。
 - **使用控制台消息在 JavaScript 和 Java 之间传递数据**。
 - **使用 `CompletableFuture` 进行异步编程，等待搜索结果**。
-
-希望以上详解能够帮助您理解代码的工作原理和关键概念。如有疑问，请随时提问。
